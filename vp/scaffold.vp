@@ -1,0 +1,12 @@
+#' Scaffold a Vapour package
+#' 
+#' Setup a Vapour package, intended to be run
+#' from the root of an R package.
+#' 
+#' @export
+func scaffold(): bool {
+  dir.create("vp")
+  dir.create("inst")
+  usethis::use_build_ignore("vp")
+}
+

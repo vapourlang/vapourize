@@ -1,0 +1,22 @@
+#' Create a Vapour package
+#' 
+#' A light wrapper around [usethis::create_package()]
+#' to create an R package and [scaffold()].
+#' 
+#' @param path Path where to create the package.
+#' @param ... Passed to [usethis::create_package()].
+#' 
+#' @export
+func create(path: string, ...: any): bool {
+  stopifnot(!missing(path))
+
+  if(dir.exists(path)) {
+    stop("directory already exists")
+    return false
+  }
+
+  usethis::create_package(path, ...)
+  scaffold()
+
+  return true
+}

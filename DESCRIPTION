@@ -1,0 +1,17 @@
+Package: vapourize
+Title: Setup Vapour Projects
+Version: 0.0.1
+Authors@R: 
+  c(
+    person(given = "John",
+           family = "Coene",
+           role = c("aut", "cre"),
+           email = "jcoenep@gmail.com")
+  )
+Description: Easily setup 'Vapour' projects.
+License: GPL (>= 2)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Suggests:
+  usethis
